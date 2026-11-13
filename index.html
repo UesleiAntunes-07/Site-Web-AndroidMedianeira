@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Android Medianeira — Assistência técnica de celulares desde 2012</title>
+  <meta name="description" content="Assistência técnica especializada em smartphones em Medianeira - PR. Tela, bateria, câmera, placa, software e mais, com garantia de 3 meses a 2 anos. Duas lojas na cidade.">
+  <meta name="theme-color" content="#0B0D0A">
+  <meta property="og:title" content="Android Medianeira — Conserto de celulares">
+  <meta property="og:description" content="Assistência técnica especializada em smartphones desde 2012. Duas lojas em Medianeira - PR.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%2371C639'/%3E%3Cg transform='rotate(-12 16 16)' fill='none' stroke='%230B0D0A' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='10.5' y='5.5' width='11' height='21' rx='3'/%3E%3Cpath d='M13.3 16.3l2 2.1 3.6-4.2'/%3E%3C/g%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Geist:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=10">
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Android Medianeira",
+    "description": "Assistência técnica especializada em smartphones.",
+    "foundingDate": "2012",
+    "url": "https://www.androidmedianeira.com/",
+    "telephone": "+55 45 3264-2264",
+    "email": "androidmedianeira@hotmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Avenida Brasília, 1660, sala 02 - Centro",
+      "addressLocality": "Medianeira",
+      "addressRegion": "PR",
+      "addressCountry": "BR"
+    },
+    "sameAs": [
+      "https://www.instagram.com/androidmedianeira/",
+      "https://www.facebook.com/androidmedianeira/"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#servicos">Pular para o conteúdo</a>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <a class="brand" href="#inicio" aria-label="Android Medianeira — início">
+      <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true">
+        <rect width="32" height="32" rx="9" fill="#71C639"/>
+        <g transform="rotate(-12 16 16)" fill="none" stroke="#0B0D0A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="10.5" y="5.5" width="11" height="21" rx="3"/>
+          <path d="M13.3 16.3l2 2.1 3.6-4.2"/>
+        </g>
+      </svg>
+      <span class="brand__name"><b>Android</b> Medianeira</span>
+    </a>
+
+    <nav class="nav__links" id="menu" aria-label="Seções">
+      <a href="#por-dentro">Por dentro</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#garantia">Garantia</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#lojas">Lojas</a>
+    </nav>
+
+    <div class="nav__end">
+      <a class="btn btn--green btn--sm" href="#contato"><span>Agendar<span class="hide-xs"> conserto</span></span></a>
+      <button class="nav__toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+      <div class="hero__card">
+        <div class="hero__glow" aria-hidden="true"></div>
+
+        <div class="hero__copy">
+          <p class="hero__tag"><i></i>Assistência técnica de smartphones</p>
+          <h1 class="hero__title">
+            <span class="line"><span>Quebrou?</span></span>
+            <span class="line"><span>A gente</span></span>
+            <span class="line"><span>conserta.</span></span>
+          </h1>
+          <p class="hero__sub">Especialistas em celulares<br>há <span data-years>14</span> anos em Medianeira.</p>
+          <div class="hero__actions">
+            <a class="btn btn--ink" href="#contato">Agendar conserto</a>
+            <a class="btn btn--ghost" href="#servicos">Ver serviços <span class="arr" aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+
+        <canvas class="hero__canvas" id="heroCanvas" aria-hidden="true"></canvas>
+
+        <p class="hero__label" aria-hidden="true"><i></i>Desde 2012</p>
+
+        <ul class="hero__facts">
+          <li><b>2</b> lojas em Medianeira</li>
+          <li><b>6</b> marcas atendidas</li>
+          <li>Garantia de <b>3 meses a 2 anos</b></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ MARCAS ============ -->
+    <section class="marcas" aria-label="Marcas de aparelhos que trabalhamos">
+      <p class="marcas__label">Marcas de aparelhos que trabalhamos</p>
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <img src="img/logos/apple.png" alt="" width="177" height="210" style="--k:1.0" decoding="async" draggable="false">
+          <img src="img/logos/samsung.png" alt="" width="494" height="77" style="--k:0.4" decoding="async" draggable="false">
+          <img src="img/logos/motorola.png" alt="" width="355" height="82" style="--k:0.6" decoding="async" draggable="false">
+          <img src="img/logos/xiaomi.png" alt="" width="493" height="136" style="--k:0.68" decoding="async" draggable="false">
+          <img src="img/logos/lg.png" alt="" width="431" height="190" style="--k:0.82" decoding="async" draggable="false">
+          <img src="img/logos/asus.png" alt="" width="660" height="130" style="--k:0.46" decoding="async" draggable="false">
+          <img src="img/logos/apple.png" alt="" width="177" height="210" style="--k:1.0" decoding="async" draggable="false">
+          <img src="img/logos/samsung.png" alt="" width="494" height="77" style="--k:0.4" decoding="async" draggable="false">
+          <img src="img/logos/motorola.png" alt="" width="355" height="82" style="--k:0.6" decoding="async" draggable="false">
+          <img src="img/logos/xiaomi.png" alt="" width="493" height="136" style="--k:0.68" decoding="async" draggable="false">
+          <img src="img/logos/lg.png" alt="" width="431" height="190" style="--k:0.82" decoding="async" draggable="false">
+          <img src="img/logos/asus.png" alt="" width="660" height="130" style="--k:0.46" decoding="async" draggable="false">
+          <img src="img/logos/apple.png" alt="" width="177" height="210" style="--k:1.0" decoding="async" draggable="false">
+          <img src="img/logos/samsung.png" alt="" width="494" height="77" style="--k:0.4" decoding="async" draggable="false">
+          <img src="img/logos/motorola.png" alt="" width="355" height="82" style="--k:0.6" decoding="async" draggable="false">
+          <img src="img/logos/xiaomi.png" alt="" width="493" height="136" style="--k:0.68" decoding="async" draggable="false">
+          <img src="img/logos/lg.png" alt="" width="431" height="190" style="--k:0.82" decoding="async" draggable="false">
+          <img src="img/logos/asus.png" alt="" width="660" height="130" style="--k:0.46" decoding="async" draggable="false">
+          <img src="img/logos/apple.png" alt="" width="177" height="210" style="--k:1.0" decoding="async" draggable="false">
+          <img src="img/logos/samsung.png" alt="" width="494" height="77" style="--k:0.4" decoding="async" draggable="false">
+          <img src="img/logos/motorola.png" alt="" width="355" height="82" style="--k:0.6" decoding="async" draggable="false">
+          <img src="img/logos/xiaomi.png" alt="" width="493" height="136" style="--k:0.68" decoding="async" draggable="false">
+          <img src="img/logos/lg.png" alt="" width="431" height="190" style="--k:0.82" decoding="async" draggable="false">
+          <img src="img/logos/asus.png" alt="" width="660" height="130" style="--k:0.46" decoding="async" draggable="false">
+        </div>
+      </div>
+      <p class="sr-only">Apple, Asus, LG, Motorola, Samsung e Xiaomi.</p>
+    </section>
+
+    <!-- ============ POR DENTRO (scroll 3D) ============ -->
+    <section class="raiox" id="por-dentro">
+      <div class="raiox__sticky">
+        <div class="raiox__glow" aria-hidden="true"></div>
+        <canvas class="raiox__canvas" id="raioxCanvas" aria-hidden="true"></canvas>
+
+        <div class="raiox__ui">
+          <p class="eyebrow eyebrow--green">Por dentro do conserto</p>
+          <h2 class="raiox__title">Cada peça,<br> no seu lugar.</h2>
+
+          <ol class="raiox__steps" id="raioxSteps">
+            <li>
+              <span class="n">01</span>
+              <div><h3>Tela e vidro frontal</h3><div class="d"><p>Trincou, manchou ou o toque parou de responder? Trocamos a tela ou o vidro frontal.</p></div></div>
+            </li>
+            <li>
+              <span class="n">02</span>
+              <div><h3>Bateria</h3><div class="d"><p>Substituição da bateria quando a carga já não acompanha o seu dia.</p></div></div>
+            </li>
+            <li>
+              <span class="n">03</span>
+              <div><h3>Placa e componentes</h3><div class="d"><p>Reparo de componentes, desoxidação e microsoldagem direto na placa.</p></div></div>
+            </li>
+            <li>
+              <span class="n">04</span>
+              <div><h3>Câmeras</h3><div class="d"><p>Câmera traseira, câmera frontal e o vidro que protege as lentes.</p></div></div>
+            </li>
+            <li>
+              <span class="n">05</span>
+              <div><h3>Áudio e carga</h3><div class="d"><p>Alto-falante, campainha, conector e placa de carga.</p></div></div>
+            </li>
+            <li>
+              <span class="n">06</span>
+              <div><h3>Carcaça e tampa</h3><div class="d"><p>Carcaça e vidro ou tampa traseira, para o aparelho voltar inteiro.</p></div></div>
+            </li>
+          </ol>
+
+          <div class="raiox__bar" aria-hidden="true"><i id="raioxBar"></i></div>
+        </div>
+
+        <p class="raiox__done" id="raioxDone" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>
+          Pronto. Funcionando de novo.
+        </p>
+        <p class="raiox__hint" id="raioxHint" aria-hidden="true">Role para desmontar <span>↓</span></p>
+      </div>
+    </section>
+
+    <!-- ============ SERVIÇOS ============ -->
+    <section class="servicos section" id="servicos">
+      <div class="wrap">
+        <header class="head reveal">
+          <p class="eyebrow">Nossos serviços</p>
+          <h2>Do vidro trincado<br>à microsoldagem.</h2>
+          <p class="head__sub">Manutenção completa para o seu smartphone, feita por técnicos altamente capacitados.</p>
+        </header>
+
+        <ul class="svc">
+          <li class="svc__item svc__item--green reveal">
+            <span class="svc__ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M12.5 6.5l-2.5 4 3.5 2-2 4.5"/></svg></span>
+            <div class="svc__body"><h3>Tela e vidro</h3><ul class="svc__list"><li>Tela</li><li>Vidro frontal</li></ul></div>
+          </li>
+          <li class="svc__item  reveal" style="--d:0.05s">
+            <span class="svc__ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="2.5" y="7.5" width="16" height="9" rx="2.5"/><path d="M21.5 10.5v3"/><path d="M11.5 9.5l-2.5 3h3l-2.5 3"/></svg></span>
+            <div class="svc__body"><h3>Bateria e carga</h3><ul class="svc__list"><li>Bateria</li><li>Conector de carga</li><li>Placa de carga</li></ul></div>
+          </li>
+          <li class="svc__item  reveal" style="--d:0.10s">
+            <span class="svc__ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="M17 6.2h.01"/></svg></span>
+            <div class="svc__body"><h3>Câmeras</h3><ul class="svc__list"><li>Câmera traseira e frontal</li><li>Vidro da câmera</li></ul></div>
+          </li>
+          <li class="svc__item  reveal" style="--d:0.15s">
+            <span class="svc__ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="6.5" y="6.5" width="11" height="11" rx="2"/><path d="M9.5 3v3.5M14.5 3v3.5M9.5 17.5V21M14.5 17.5V21M3 9.5h3.5M3 14.5h3.5M17.5 9.5H21M17.5 14.5H21"/></svg></span>
+            <div class="svc__body"><h3>Placa</h3><ul class="svc__list"><li>Componentes</li><li>Desoxidação de componentes</li><li>Microsoldagem</li></ul></div>
+          </li>
+          <li class="svc__item  reveal">
+            <span class="svc__ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 9.5v5h3.5l4.5 4v-13l-4.5 4z"/><path d="M15.5 9a4 4 0 0 1 0 6M18 6.5a7.5 7.5 0 0 1 0 11"/></svg></span>
+            <div class="svc__body"><h3>Áudio</h3><ul class="svc__list"><li>Alto falante</li><li>Campainha</li></ul></div>
+          </li>
+          <li class="svc__item  reveal" style="--d:0.05s">
+            <span class="svc__ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><rect x="8.5" y="4.5" width="4.5" height="4.5" rx="1.3"/></svg></span>
+            <div class="svc__body"><h3>Carcaça</h3><ul class="svc__list"><li>Carcaça</li><li>Vidro / tampa de bateria</li></ul></div>
+          </li>
+          <li class="svc__item  reveal" style="--d:0.10s">
+            <span class="svc__ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M13.5 5.5l-3 13"/></svg></span>
+            <div class="svc__body"><h3>Software</h3><ul class="svc__list"><li>Software</li></ul></div>
+          </li>
+          <li class="svc__item svc__item--cta reveal" style="--d:.15s">
+            <a href="#contato">
+              <span class="svc__ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+              <div class="svc__body"><h3>Não sabe qual é o problema?</h3><p class="svc__link">Fale com a nossa equipe</p></div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ GARANTIA ============ -->
+    <section class="garantia" id="garantia">
+      <div class="wrap garantia__grid">
+        <div class="garantia__copy reveal">
+          <p class="eyebrow eyebrow--green">Garantia</p>
+          <h2>De <em>3 meses</em><br>a <em>2 anos</em><br>de garantia.</h2>
+          <p class="garantia__text">Ao realizar a manutenção na Android Medianeira, você recebe de 3 meses a 2 anos de garantia, dependendo do conserto realizado e da peça que você escolher.</p>
+        </div>
+
+        <div class="garantia__viz reveal" style="--d:.1s">
+          <div class="gauge" id="gauge">
+            <div class="gauge__head">
+              <span>Hoje</span><span>2 anos</span>
+            </div>
+            <div class="gauge__track">
+              <i class="gauge__fill"></i>
+              <span class="gauge__pin gauge__pin--a"><b>3 meses</b></span>
+              <span class="gauge__pin gauge__pin--b"><b>2 anos</b></span>
+            </div>
+            <div class="gauge__ticks" aria-hidden="true">
+              <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+          </div>
+
+          <ul class="garantia__notes">
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.4-.6-.6-2.4z"/></svg>
+              <span>Varia conforme o <b>conserto realizado</b></span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg>
+              <span>Varia conforme a <b>peça que você escolher</b></span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l8 3v6c0 5-3.4 8.6-8 10-4.6-1.4-8-5-8-10v-6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg>
+              <span>Cobre <b>defeito de fábrica</b></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SOBRE ============ -->
+    <section class="sobre section" id="sobre">
+      <div class="wrap">
+        <div class="sobre__grid">
+          <figure class="fachada reveal">
+            <picture>
+              <source srcset="img/fachada.avif" type="image/avif">
+              <img src="img/fachada.jpg" width="803" height="1020" loading="lazy" decoding="async"
+                   alt="Fachada da loja Android Medianeira na Avenida Brasília, 1660, com o letreiro verde iluminado à noite">
+            </picture>
+            <figcaption>
+              <span>
+                <span class="fachada__title">É aqui que a gente te recebe.</span>
+                <span class="fachada__addr"><i></i>Loja 1 · Av. Brasília, 1660 · Centro</span>
+              </span>
+              <a class="fachada__go" href="#lojas" aria-label="Ver as lojas no mapa"><span aria-hidden="true">↓</span></a>
+            </figcaption>
+          </figure>
+
+          <div class="sobre__body">
+            <p class="eyebrow reveal">Sobre nós</p>
+            <p class="fill" id="fillText">Desde que abrimos nossas portas em 2012, a Android Medianeira oferece aos clientes as melhores opções de peças e serviços. Nossa equipe de técnicos altamente capacitados está pronta para lidar com uma ampla variedade de problemas — de telas quebradas a falhas de software — com serviços confiáveis e de alta qualidade, para que o seu celular volte a funcionar.</p>
+
+            <ul class="stats">
+              <li class="reveal"><b><span data-count="2012" data-plain>2012</span></b><span>ano em que abrimos as portas</span></li>
+              <li class="reveal" style="--d:.07s"><b><span data-count data-years>14</span></b><span>anos de confiança em Medianeira</span></li>
+              <li class="reveal" style="--d:.14s"><b><span data-count="2">2</span></b><span>lojas em Medianeira, Paraná</span></li>
+              <li class="reveal" style="--d:.21s"><b><span data-count="15">15</span></b><span>tipos de manutenção</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="passos">
+          <header class="head head--row reveal">
+            <h2>Como funciona</h2>
+            <p class="head__sub">Do primeiro contato ao aparelho na sua mão.</p>
+          </header>
+          <ol class="passos__list">
+            <li class="reveal"><span class="n">1</span><h3>Fale com a gente</h3><p>Chame no WhatsApp ou passe em uma das nossas lojas e conte o que aconteceu.</p></li>
+            <li class="reveal" style="--d:.08s"><span class="n">2</span><h3>Avaliamos o aparelho</h3><p>Nossa equipe técnica identifica o problema do seu smartphone.</p></li>
+            <li class="reveal" style="--d:.16s"><span class="n">3</span><h3>Você escolhe a peça</h3><p>Apresentamos as opções de peças e você decide a que faz mais sentido.</p></li>
+            <li class="reveal" style="--d:.24s"><span class="n">4</span><h3>Conserto com garantia</h3><p>Seu celular volta a funcionar, com garantia de 3 meses a 2 anos.</p></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LOJAS ============ -->
+    <section class="lojas section" id="lojas">
+      <div class="wrap">
+        <header class="head reveal">
+          <p class="eyebrow">Onde estamos</p>
+          <h2>Venha nos visitar.</h2>
+          <p class="head__sub">Duas lojas em Medianeira, Paraná.</p>
+        </header>
+
+        <div class="lojas__grid reveal">
+          <div class="lojas__side">
+            <p class="lojas__hint">Escolha a loja para ver no mapa</p>
+            <div class="lojas__tabs" role="tablist" aria-label="Lojas">
+              <button class="loja is-active" role="tab" aria-selected="true" aria-controls="mapa"
+                data-map="https://www.google.com/maps?q=Av.%20Bras%C3%ADlia%2C%201660%20-%20Centro%2C%20Medianeira%20-%20PR&z=17&output=embed"
+                data-link="https://www.google.com/maps/search/?api=1&query=Av.%20Bras%C3%ADlia%2C%201660%20-%20Centro%2C%20Medianeira%20-%20PR">
+                <span class="loja__n">Loja 1</span>
+                <span class="loja__addr">Av. Brasília, 1660, sala 02</span>
+                <span class="loja__city">Centro · Medianeira - PR</span>
+                <span class="loja__cta"><span class="on">Mostrando no mapa</span><span class="off">Ver no mapa <i aria-hidden="true">→</i></span></span>
+              </button>
+              <button class="loja" role="tab" aria-selected="false" aria-controls="mapa"
+                data-map="https://www.google.com/maps?q=Av.%20Brasil%2C%204105%2C%20Medianeira%20-%20PR&z=17&output=embed"
+                data-link="https://www.google.com/maps/search/?api=1&query=Av.%20Brasil%2C%204105%2C%20Medianeira%20-%20PR">
+                <span class="loja__n">Loja 2</span>
+                <span class="loja__addr">Av. Brasil, 4105, sala 02</span>
+                <span class="loja__city">Parque Independência · Medianeira - PR</span>
+                <span class="loja__cta"><span class="on">Mostrando no mapa</span><span class="off">Ver no mapa <i aria-hidden="true">→</i></span></span>
+              </button>
+            </div>
+
+            <div class="contatos">
+              <h3 class="contatos__title">Fale com a gente</h3>
+              <a class="contato contato--zap" href="https://api.whatsapp.com/send?phone=5545991582353" target="_blank" rel="noopener">
+                <span class="contato__ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 20.5l1.3-4.6A8.5 8.5 0 1 1 8.2 19.2z"/><path d="M9 8.5c0 3 2.5 6 6 6.5l1-1.5-2-1-1 .8c-.8-.4-1.7-1.3-2.1-2.1l.8-1-1-2z"/></svg></span>
+                <span class="contato__txt"><small>WhatsApp</small><b>45 99158 2353</b></span>
+                <span class="contato__go">Chamar</span>
+              </a>
+              <a class="contato" href="tel:+554532642264">
+                <span class="contato__ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span>
+                <span class="contato__txt"><small>Telefone</small><b>45 3264 2264</b></span>
+                <span class="contato__go">Ligar</span>
+              </a>
+              <a class="contato contato--mail" href="mailto:androidmedianeira@hotmail.com">
+                <span class="contato__ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M3.5 7.5l8.5 6 8.5-6"/></svg></span>
+                <span class="contato__txt"><small>E-mail</small><b>androidmedianeira@<wbr>hotmail.com</b></span>
+                <span class="contato__go">Escrever</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="mapa" id="mapa" role="tabpanel">
+            <iframe id="mapaFrame" title="Mapa da loja Android Medianeira" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=Av.%20Bras%C3%ADlia%2C%201660%20-%20Centro%2C%20Medianeira%20-%20PR&z=17&output=embed"></iframe>
+            <span class="mapa__veil" aria-hidden="true"></span>
+            <a class="mapa__go" id="mapaLink" target="_blank" rel="noopener"
+              href="https://www.google.com/maps/search/?api=1&query=Av.%20Bras%C3%ADlia%2C%201660%20-%20Centro%2C%20Medianeira%20-%20PR">Como chegar <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="cta" id="contato">
+      <div class="cta__card">
+        <div class="cta__rings" aria-hidden="true"><i></i><i></i><i></i></div>
+        <p class="eyebrow reveal">Fale conosco</p>
+        <h2 class="reveal" style="--d:.05s">Seu celular<br>quebrou?</h2>
+        <p class="cta__sub reveal" style="--d:.1s">Agende já o conserto com a nossa equipe.</p>
+        <div class="cta__actions reveal" style="--d:.15s">
+          <a class="btn btn--ink btn--lg" target="_blank" rel="noopener"
+             href="https://api.whatsapp.com/send?phone=5545991582353&text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20agendar%20um%20conserto.">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 20.5l1.3-4.6A8.5 8.5 0 1 1 8.2 19.2z"/><path d="M9 8.5c0 3 2.5 6 6 6.5l1-1.5-2-1-1 .8c-.8-.4-1.7-1.3-2.1-2.1l.8-1-1-2z"/></svg>
+            Chamar no WhatsApp
+          </a>
+          <a class="btn btn--white btn--lg" href="tel:+554532642264"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>Ligar 45 3264 2264</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="foot">
+    <div class="wrap foot__grid">
+      <div class="foot__brand">
+        <a class="brand" href="#inicio">
+          <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true">
+            <rect width="32" height="32" rx="9" fill="#71C639"/>
+            <g transform="rotate(-12 16 16)" fill="none" stroke="#0B0D0A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="10.5" y="5.5" width="11" height="21" rx="3"/>
+              <path d="M13.3 16.3l2 2.1 3.6-4.2"/>
+            </g>
+          </svg>
+          <span class="brand__name"><b>Android</b> Medianeira</span>
+        </a>
+        <p>Assistência técnica especializada em smartphones desde 2012.</p>
+        <div class="social">
+          <a href="https://www.instagram.com/androidmedianeira/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r=".6"/></svg>
+          </a>
+          <a href="https://www.facebook.com/androidmedianeira/" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 21v-7.5h2.6l.4-3H14V8.6c0-.9.3-1.5 1.6-1.5H17V4.4c-.3 0-1.2-.1-2.2-.1-2.2 0-3.7 1.3-3.7 3.8v2.4H8.5v3h2.6V21"/></svg>
+          </a>
+          <a href="https://api.whatsapp.com/send?phone=5545991582353" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 20.5l1.3-4.6A8.5 8.5 0 1 1 8.2 19.2z"/><path d="M9 8.5c0 3 2.5 6 6 6.5l1-1.5-2-1-1 .8c-.8-.4-1.7-1.3-2.1-2.1l.8-1-1-2z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Navegue</h4>
+        <ul>
+          <li><a href="#por-dentro">Por dentro do conserto</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#garantia">Garantia</a></li>
+          <li><a href="#sobre">Sobre nós</a></li>
+          <li><a href="#lojas">Onde estamos</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Lojas</h4>
+        <ul>
+          <li>Av. Brasília, 1660, sala 02<br><span>Centro · Medianeira - PR</span></li>
+          <li>Av. Brasil, 4105, sala 02<br><span>Parque Independência · Medianeira - PR</span></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="tel:+554532642264">45 3264 2264</a></li>
+          <li><a href="https://api.whatsapp.com/send?phone=5545991582353" target="_blank" rel="noopener">45 99158 2353</a></li>
+          <li><a href="mailto:androidmedianeira@hotmail.com">androidmedianeira@hotmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap foot__base">
+      <span>© <span id="year">2026</span> Android Medianeira. Todos os direitos reservados.</span>
+      <a href="#inicio">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+
+  <a class="zap" href="https://api.whatsapp.com/send?phone=5545991582353&text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20agendar%20um%20conserto." target="_blank" rel="noopener" aria-label="Chamar no WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 20.5l1.3-4.6A8.5 8.5 0 1 1 8.2 19.2z"/><path d="M9 8.5c0 3 2.5 6 6 6.5l1-1.5-2-1-1 .8c-.8-.4-1.7-1.3-2.1-2.1l.8-1-1-2z"/></svg>
+  </a>
+
+  <script src="js/main.js?v=10" defer></script>
+  <script type="module" src="js/scene.js?v=10"></script>
+</body>
+</html>
